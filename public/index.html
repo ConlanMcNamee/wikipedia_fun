@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="api">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body ng-controller="apiController as api">
+    <button type="submit" name="submit" ng-click="query()"></button>
+    <ul>
+      <li ng-repeat="result in results track by $index">
+        {{result}}
+      </li>
+    </ul>
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+  </body>
+</html>
